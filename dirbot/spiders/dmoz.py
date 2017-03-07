@@ -32,5 +32,5 @@ class DmozSpider(Spider):
             item['description'] = site.css(
                 'div.site-descr::text').extract_first().strip()
             items.append(item)
-
+        print(items)
         return items
